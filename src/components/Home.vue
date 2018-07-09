@@ -1,6 +1,9 @@
 <template>
-  <main>
-    <section>
+  <main class="m-3">
+    <section class="flex">
+      <div class="img-container mt-3">
+        <img class="pt-3" src="../assets/me.png" />
+      </div>
       <div class="title">
         <h1>Zack Cuddy</h1>
         <hr class="mt-25 mb-25" />
@@ -24,11 +27,25 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
+  main {
+    section {
+      margin-left: 5rem;
+    }
+  }
+
+  .img-container {
+    border-radius: 50%;
+    border: 1px solid color(blueDark);
+    background-color: color(blueLight);
+
+    img {
+      border-radius: 50%;
+    }
+  }
 
   .title {
     position: fixed;
-    bottom: 30vh;
-    margin-left: 5rem;
+    bottom: 35vh;
     color: color(blueLight);
 
     h1 {

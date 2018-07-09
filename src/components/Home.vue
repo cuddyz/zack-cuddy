@@ -30,8 +30,8 @@ export default {
 
   .img-container {
     border-radius: 50%;
-    border: 1px solid color(blueDark);
     background-color: color(blueLight);
+    border: 1px solid color(blueDark);
 
     img {
       border-radius: 50%;
@@ -53,6 +53,7 @@ export default {
 
     hr {
       width: 30rem;
+      border-color: color(blueLight);
     }
   }
 </style>

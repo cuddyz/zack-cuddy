@@ -4,7 +4,8 @@ import Home from '@/components/Home'
 
 Vue.use(Router)
 
-export default new Router({
+let routeConfig = {
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -12,4 +13,8 @@ export default new Router({
       component: Home
     }
   ]
-})
+}
+
+const router = new Router(routeConfig)
+
+export default router

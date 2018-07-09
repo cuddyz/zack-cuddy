@@ -38,20 +38,3 @@
 .text-center {
     text-align: center;
 }
-
-.tile {
-    height: 105vh;
-    background-color: color(whiteLight);
-}
-
-@media (max-width: breaks(desktop-wide)) { 
-    .tile {
-        height: 90vh;
-    }
- }
-
-.quarter-tile {
-    height: 26vh;
-    display: flex;
-    background-color: color(whiteLight);
-}

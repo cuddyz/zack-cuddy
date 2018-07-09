@@ -2,6 +2,7 @@
   <main>
     <section>
       <h1>Zack Cuddy</h1>
+      <h3>Developer</h3>
     </section>
   </main>
 </template>
@@ -20,7 +21,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
-  h1 {
+  h1, h3 {
     color: color(blueLight);
   }
 </style>

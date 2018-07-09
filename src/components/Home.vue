@@ -1,6 +1,6 @@
 <template>
   <main class="m-3">
-    <section class="flex">
+    <section class="flex ml-5">
       <div class="img-container mt-3">
         <img class="pt-3" src="../assets/me.png" />
       </div>
@@ -27,11 +27,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
-  main {
-    section {
-      margin-left: 5rem;
-    }
-  }
 
   .img-container {
     border-radius: 50%;

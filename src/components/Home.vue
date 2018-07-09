@@ -1,8 +1,10 @@
 <template>
   <main>
     <section>
-      <h1>Zack Cuddy</h1>
-      <h3>Developer</h3>
+      <div>
+        <h1>Zack Cuddy</h1>
+        <h3>Developer</h3>
+      </div>
     </section>
   </main>
 </template>

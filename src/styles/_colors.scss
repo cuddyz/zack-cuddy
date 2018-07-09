@@ -6,10 +6,10 @@ $colors: (
     blackDark: #232323,
     greyLight: 757575,
     grey: #616161,
-    greyDark: 424242,
-    blueLight: #81D4FA,
-    blue: #4FC3F7,
-    blueDark: #29B6F6,
+    greyDark: #424242,
+    blueLight: #d1f0f0,
+    blue: #b8d7d7,
+    blueDark: #9fbebe,
 );
 @function color($color) {
     @if map-has-key($colors, $color) {

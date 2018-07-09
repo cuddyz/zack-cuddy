@@ -21,6 +21,6 @@ export default {
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
   h1 {
-    color: color(blue);
+    color: color(blueLight);
   }
 </style>

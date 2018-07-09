@@ -1,7 +1,7 @@
 <template>
   <main>
     <section>
-      <div>
+      <div class="flex-4">
         <h1>Zack Cuddy</h1>
         <h3>Developer</h3>
       </div>

@@ -1,0 +1,57 @@
+.column {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.float-right {
+    float: right;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.tile {
+    height: 105vh;
+    background-color: color(whiteLight);
+}
+
+@media (max-width: breaks(desktop-wide)) { 
+    .tile {
+        height: 90vh;
+    }
+ }
+
+.quarter-tile {
+    height: 26vh;
+    display: flex;
+    background-color: color(whiteLight);
+}

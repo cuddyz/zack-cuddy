@@ -5,10 +5,10 @@
         <img src="../assets/me.png" />
       </div>
       <div class="flex social fade-in-right">
-        <button><i class="fa fa-github"></i></button>
-        <button><i class="fa fa-facebook-official"></i></button>
-        <button><i class="fa fa-linkedin"></i></button>
-        <button><i class="fa fa-reddit"></i></button>
+        <button><a href="https://github.com/cuddyz" target="_blank"><i class="fa fa-github"></i></a></button>
+        <button><a href="https://www.facebook.com/zack.cuddy" target="_blank"><i class="fa fa-facebook-official"></i></a></button>
+        <button><a href="https://www.linkedin.com/in/zack-cuddy-56b83984" target="_blank"><i class="fa fa-linkedin"></i></a></button>
+        <button><a href="https://www.reddit.com/user/cuddins/" target="_blank"><i class="fa fa-reddit"></i></a></button>
       </div>
       <div class="title fade-in-left">
         <h1>Zack Cuddy</h1>

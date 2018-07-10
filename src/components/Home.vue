@@ -1,6 +1,6 @@
 <template>
-  <main class="m-3">
-    <section class="grid">
+  <main>
+    <section class="grid top mb-3">
       <div class="img-container fade-in-top">
         <img src="../assets/me.png" />
       </div>
@@ -14,6 +14,15 @@
         <h1>Zack Cuddy</h1>
         <hr class="mt-25 mb-25" />
         <h3>Developer</h3>
+      </div>
+    </section>
+    <section class="grid middle">
+      <div class="nav">
+        <ul>
+          <li><img src="../assets/vue.png" /></li>
+        </ul>
+      </div>
+      <div class="content">
       </div>
     </section>
   </main>
@@ -36,14 +45,24 @@ export default {
 
   main {
     section {
-      &.grid {
+      &.top {
         justify-content: center;
-        grid-template-columns: 30vw 50vw;
+        grid-template-columns: 3rem 2fr 3fr 3rem;
         grid-template-rows: 7rem auto;
         grid-template-areas:
-          '. .'
-          'profile-picture social'
-          'title .';
+          '. . . .'
+          '. profile-picture social .'
+          '. title . .';
+        grid-gap: 2rem;
+      }
+      &.middle {
+        background-color: color(blueLight);
+        justify-content: center;
+        grid-template-columns: 3rem 1fr 3rem;
+        grid-template-rows: 10rem auto;
+        grid-template-areas:
+          '. nav .'
+          '. content .';
         grid-gap: 2rem;
       }
     }
@@ -103,5 +122,18 @@ export default {
     hr {
       border-color: color(blueLight);
     }
+  }
+
+  .nav {
+    grid-area: nav;
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .content {
+    grid-area: content;
   }
 </style>

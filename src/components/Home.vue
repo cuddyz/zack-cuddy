@@ -1,8 +1,8 @@
 <template>
   <main class="m-3">
-    <section class="flex ml-5">
-      <div class="img-container mt-3">
-        <img class="pt-3" src="../assets/me.png" />
+    <section class="grid">
+      <div class="img-container">
+        <img src="../assets/me.png" />
       </div>
       <div class="title">
         <h1>Zack Cuddy</h1>
@@ -28,19 +28,39 @@ export default {
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
 
+  main {
+    section {
+      &.grid {
+        justify-content: center;
+        grid-template-columns: 30vw 50vw;
+        grid-template-rows: 7rem auto;
+        grid-template-areas:
+          '. .'
+          'profile-picture .'
+          'title .';
+        grid-gap: 2rem;
+      }
+    }
+  }
+
   .img-container {
+    grid-area: profile-picture;
+    text-align: center;
+    justify-content: center;
     border-radius: 50%;
     background-color: color(blueLight);
     border: 1px solid color(blueDark);
+    width: 60%;
 
     img {
       border-radius: 50%;
+      height: 100%;
+      width: 100%;
     }
   }
 
   .title {
-    position: fixed;
-    bottom: 35vh;
+    grid-area: title;
     color: color(blueLight);
 
     h1 {
@@ -52,7 +72,6 @@ export default {
     }
 
     hr {
-      width: 30rem;
       border-color: color(blueLight);
     }
   }

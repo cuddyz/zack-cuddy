@@ -1,10 +1,16 @@
 <template>
   <main class="m-3">
     <section class="grid">
-      <div class="img-container">
+      <div class="img-container fade-in-top">
         <img src="../assets/me.png" />
       </div>
-      <div class="title">
+      <div class="flex social fade-in-right">
+        <button><i class="fa fa-github"></i></button>
+        <button><i class="fa fa-facebook-official"></i></button>
+        <button><i class="fa fa-linkedin"></i></button>
+        <button><i class="fa fa-reddit"></i></button>
+      </div>
+      <div class="title fade-in-left">
         <h1>Zack Cuddy</h1>
         <hr class="mt-25 mb-25" />
         <h3>Developer</h3>
@@ -36,7 +42,7 @@ export default {
         grid-template-rows: 7rem auto;
         grid-template-areas:
           '. .'
-          'profile-picture .'
+          'profile-picture social'
           'title .';
         grid-gap: 2rem;
       }
@@ -56,6 +62,29 @@ export default {
       border-radius: 50%;
       height: 100%;
       width: 100%;
+    }
+  }
+
+  .social {
+    grid-area: social;
+    justify-content: center;
+    align-items: flex-end;
+
+    button {
+      border-radius: 5px;
+      background-color: color(blueLight);
+      border-color: color(blueDark);
+      margin: 0.5rem;
+      padding: 0.75rem;
+      &:hover {
+        background-color: color(blueDark);
+        border-color: darken(color(blueDark), 20%);
+        cursor: pointer;
+      }
+      i {
+        font-size: 2rem;
+        color: color(grey);
+      }
     }
   }
 

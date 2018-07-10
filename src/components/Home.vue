@@ -5,10 +5,10 @@
         <img src="../assets/me.png" />
       </div>
       <div class="flex social fade-in-right">
-        <button><a href="https://github.com/cuddyz" target="_blank"><i class="fa fa-github"></i></a></button>
-        <button><a href="https://www.facebook.com/zack.cuddy" target="_blank"><i class="fa fa-facebook-official"></i></a></button>
-        <button><a href="https://www.linkedin.com/in/zack-cuddy-56b83984" target="_blank"><i class="fa fa-linkedin"></i></a></button>
-        <button><a href="https://www.upwork.com/o/profiles/users/_~016c63c53cd0427c0e/" target="_blank"><i class="fa fa-briefcase"></i></a></button>
+        <button><a href="https://github.com/cuddyz" target="_blank"><i class="fab fa-github"></i></a></button>
+        <button><a href="https://www.facebook.com/zack.cuddy" target="_blank"><i class="fab fa-facebook"></i></a></button>
+        <button><a href="https://www.linkedin.com/in/zack-cuddy-56b83984" target="_blank"><i class="fab fa-linkedin"></i></a></button>
+        <button><a href="https://www.upwork.com/o/profiles/users/_~016c63c53cd0427c0e/" target="_blank"><i class="fas fa-briefcase"></i></a></button>
       </div>
       <div class="title fade-in-left">
         <h1>Zack Cuddy</h1>
@@ -18,8 +18,13 @@
     </section>
     <section class="grid middle">
       <div class="nav">
-        <ul>
-          <li><img src="../assets/vue.png" /></li>
+        <ul class="flex">
+          <li class="active"><i class="fab fa-vuejs"></i></li>
+          <li><i class="fab fa-node-js"></i></li>
+          <li><i class="fab fa-angular"></i></li>
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-css3-alt"></i></li>
+          <li><i class="fab fa-js"></i></li>
         </ul>
       </div>
       <div class="content">
@@ -59,11 +64,10 @@ export default {
         background-color: color(blueLight);
         justify-content: center;
         grid-template-columns: 3rem 1fr 3rem;
-        grid-template-rows: 10rem auto;
+        grid-template-rows: auto 30rem;
         grid-template-areas:
           '. nav .'
           '. content .';
-        grid-gap: 2rem;
       }
     }
   }
@@ -127,13 +131,30 @@ export default {
   .nav {
     grid-area: nav;
 
-    img {
-      height: 100px;
-      width: 100px;
+    li {
+      border-left: 3px solid color(blueDark);
+      border-bottom: 3px solid color(blueDark);
+      padding: 1rem;
+      &:last-child {
+        border-right: 3px solid color(blueDark);
+      }
+      &.active {
+        border-bottom: 0px;
+        background-color: color(blueDark);
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: color(blueDark);
+      }
+      i {
+        font-size: 4rem;
+        color: color(grey);
+      }
     }
   }
 
   .content {
     grid-area: content;
+    background-color: color(blueDark);
   }
 </style>

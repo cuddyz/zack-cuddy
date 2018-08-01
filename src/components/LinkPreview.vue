@@ -175,7 +175,7 @@ export default {
   height: 28px;
   width: 28px;
   animation: rotate 0.8s infinite linear;
-  border: 5px solid #868686;
+  border: 5px solid color(blue);
   border-right-color: transparent;
   border-radius: 50%;
 }

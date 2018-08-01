@@ -1,18 +1,20 @@
 <template>
   <div>
-    <h1>{{ project.name }}</h1>
+    <link-prevue :url="project.website"></link-prevue>
   </div>
 </template>
 
 <script>
+import LinkPrevue from 'link-prevue'
+
 export default {
   name: 'ProjectDetails',
-  props: ['project']
+  props: ['project'],
+  components: {
+    LinkPrevue
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-  h1 {
-    color: white;
-  }
 </style>

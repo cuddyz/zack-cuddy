@@ -48,7 +48,7 @@ export default {
     },
     apiUrl: {
       type: String,
-      default: 'https://linkpreview-api.herokuapp.com/'
+      default: 'https://zack-cuddy.com'
     }
   },
   watch: {

@@ -49,7 +49,7 @@ export default {
     },
     apiUrl: {
       type: String,
-      default: 'https://zack-cuddy.com'
+      default: 'https://linkpreview-api.herokuapp.com/'
     }
   },
   watch: {

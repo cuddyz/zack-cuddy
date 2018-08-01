@@ -3,7 +3,7 @@
     <profile class="m-3"></profile>
     <skills class="pr-3 pl-3"></skills>
     <projects class="m-3"></projects>
-    <contact class="m-3"></contact>
+    <contact class="pr-3 pl-3 pb-3"></contact>
   </main>
 </template>
 

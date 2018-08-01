@@ -10,6 +10,7 @@ $colors: (
     blueLight: #d1f0f0,
     blue: #b8d7d7,
     blueDark: #9fbebe,
+    error: #f44336
 );
 @function color($color) {
     @if map-has-key($colors, $color) {

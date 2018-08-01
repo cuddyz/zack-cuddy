@@ -27,7 +27,15 @@
           <li><i class="fab fa-js"></i></li>
         </ul>
       </div>
-      <div class="content">
+      <div class="grid content">
+        <div class="flex lang-links mt-1 mr-1">
+          <button><a href="https://github.com/vuejs/vue" target="_blank"><i class="fab fa-github"></i></a></button>
+          <button><a href="https://vuejs.org/" target="_blank"><i class="fas fa-link"></i></a></button>
+        </div>
+        <div class="logo">
+          <img src="../assets/vue.png" />
+        </div>
+        <p class="description">Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.</p>
       </div>
     </section>
   </main>
@@ -44,9 +52,25 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
+
+  button {
+    border-radius: 5px;
+    background-color: color(blueLight);
+    border-color: color(blueDark);
+    margin: 0.5rem;
+    padding: 0.75rem;
+    &:hover {
+      background-color: color(blueDark);
+      border-color: darken(color(blueDark), 20%);
+      cursor: pointer;
+    }
+    i {
+      font-size: 2rem;
+      color: color(grey);
+    }
+  }
 
   main {
     section {
@@ -92,23 +116,6 @@ export default {
     grid-area: social;
     justify-content: center;
     align-items: flex-end;
-
-    button {
-      border-radius: 5px;
-      background-color: color(blueLight);
-      border-color: color(blueDark);
-      margin: 0.5rem;
-      padding: 0.75rem;
-      &:hover {
-        background-color: color(blueDark);
-        border-color: darken(color(blueDark), 20%);
-        cursor: pointer;
-      }
-      i {
-        font-size: 2rem;
-        color: color(grey);
-      }
-    }
   }
 
   .title {
@@ -156,5 +163,27 @@ export default {
   .content {
     grid-area: content;
     background-color: color(blueDark);
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas:
+      '. . lang-links'
+      'logo description .'
+      '. comments .';
+
+      .logo {
+        grid-area: logo;
+        img {
+          height: 15em;
+        }
+      }
+
+      .lang-links {
+        grid-area: lang-links;
+        justify-content: flex-end;
+      }
+      .description {
+        grid-area: description;
+        font-size: 1.2em;
+      }
   }
 </style>

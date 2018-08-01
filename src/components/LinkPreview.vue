@@ -18,7 +18,7 @@
             <p>{{response.description}}</p>
           </div>
           <div class="card-btn">
-            <a href="javascript:;" v-if="showButton" @click="viewMore">View More</a>
+            <a :href="url" v-if="showButton">View More</a>
           </div>
         </div>
       </div>
@@ -111,86 +111,61 @@ export default {
 }
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:400,600');
+<style lang="scss" scoped>
+@import '../styles/colors.scss';
 
 .wrapper {
   overflow: auto;
-  border-radius: 7px 7px 7px 7px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: color(blueLight);
 }
 
 .card-img {
   width: 100%;
-}
 
-.card-img img {
-  width: 100%;
-  border-radius: 7px 7px 0 0;
-}
-
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-
-.card-info {
-  border-radius: 0 0 7px 7px;
-  background-color: #ffffff;
+  img {
+    width: 100%;
+  }
 }
 
 .card-text {
   width: 80%;
   margin: 0 auto;
   text-align: justify;
-}
 
-.card-text h1 {
-  text-align: center;
-  font-size: 24px;
-  color: #474747;
-  margin: 5px 0 5px 0;
-  font-family: 'Hind Siliguri', sans-serif;
-}
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 5px 0 5px 0;
+  }
 
-.card-text p {
-  font-family: 'Hind Siliguri', sans-serif;
-  color: #8d8d8d;
-  font-size: 15px;
-  overflow: hidden;
-  margin: 0;
-  text-align: center;
+  p {
+    font-size: 15px;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .card-btn {
   margin: 1em 0 1em 0;
   position: relative;
   text-align: center;
-}
 
-.card-btn a {
-  border-radius: 2em;
-  font-family: 'Hind Siliguri', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  background-color: #ffa9be;
-  padding: 10px 20px 10px 20px;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
+  a {
+    border-radius: 20px;
+    background-color: color(blueDark);
+    padding: .5rem 1rem;
+    text-align: center;
+    display: inline-block;
 
-.card-btn a:hover {
-  background-color: #ff8fab;
+    &:hover {
+      background-color: darken(color(blueDark), 10%);
+      color: color(greyDark);
+    }
+  }
+
+
 }
 
 /* Loader */

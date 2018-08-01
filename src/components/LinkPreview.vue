@@ -1,4 +1,5 @@
 <template>
+<!-- Local copy of https://github.com/nivaldomartinez/link-prevue -->
 <div>
   <div id="loader-container" v-if="!response && validUrl" :style="{width:cardWidth}">
     <slot name="loading">

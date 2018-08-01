@@ -1,6 +1,11 @@
 <template>
   <div>
-    <link-preview :url="project.website"></link-preview>
+    <div class="logo flex">
+      <img :src="`../static/${project.image}`" />
+    </div>
+    <h3>{{ project.name }}</h3>
+    <p>{{ project.description }}</p>
+    <button><a :href="project.website">View More</a></button>
   </div>
 </template>
 
@@ -17,5 +22,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .logo {
+    grid-area: logo;
+    align-items: flex-start;
+    justify-content: center;
 
+    img {
+      height: 10rem;
+    }
+  }
 </style>

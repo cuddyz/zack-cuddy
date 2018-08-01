@@ -8,7 +8,7 @@
   </div>
   <div v-if="response">
     <slot :img="response.images[0]" :title="response.title" :description="response.description" :url="url">
-      <div class="wrapper" :style="{width:cardWidth}">
+      <div class="wrapper grid" :style="{width:cardWidth}">
         <div class="card-img">
           <img :src="response.images[0]">
         </div>
@@ -115,9 +115,11 @@ export default {
 @import '../styles/colors.scss';
 
 .wrapper {
+  grid-auto-rows: 20rem auto;
   overflow: auto;
   border-radius: 5px;
   background-color: color(blueLight);
+  height: 30rem;
 }
 
 .card-img {
@@ -164,7 +166,6 @@ export default {
       color: color(greyDark);
     }
   }
-
 
 }
 

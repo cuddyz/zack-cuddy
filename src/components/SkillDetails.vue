@@ -7,7 +7,7 @@
     <div class="logo flex flex-center">
       <img :src="`../static/${skill.image}`" />
     </div>
-    <p class="description">{{ skill.description }}</p>
+    <div class="description mb-2" v-html="skill.description"></div>
     <div class="testimonial">
       <p>Testimonial:</p>
       <p>{{ skill.testimonial }}</p>
@@ -28,7 +28,7 @@ export default {
   .details {
     background-color: color(blueDark);
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 6rem 2fr 2fr;
+    grid-template-rows: 6rem 2fr 1fr;
     grid-template-areas:
       '. . lang-links'
       'logo description .'
@@ -37,7 +37,7 @@ export default {
       .logo {
         grid-area: logo;
         img {
-          height: 15em;
+          width: 60%;
         }
       }
 

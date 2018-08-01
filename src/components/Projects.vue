@@ -1,15 +1,23 @@
 <template>
   <section class="grid">
-    <p>Blah</p>
-    <p>Blah2</p>
-    <p>Blah3</p>
-    <p>Blah 4</p>
+    <project-details :project="project" v-for="project in projects" :key="project.name"></project-details>
   </section>
 </template>
 
 <script>
+import { Projects } from '@/constants/Projects.js'
+import ProjectDetails from '@/components/ProjectDetails.vue'
+
 export default {
-  name: 'Projects'
+  name: 'Projects',
+  data () {
+    return {
+      projects: Projects
+    }
+  },
+  components: {
+    ProjectDetails
+  }
 }
 </script>
 

@@ -4,13 +4,15 @@
       <button><a :href="skill.github" target="_blank"><i class="fab fa-github"></i></a></button>
       <button><a :href="skill.website" target="_blank"><i class="fas fa-link"></i></a></button>
     </div>
-    <div class="logo flex flex-center">
+    <div class="logo flex">
       <img :src="`../static/${skill.image}`" />
     </div>
-    <div class="description mb-2" v-html="skill.description"></div>
-    <div class="testimonial">
-      <p>Testimonial:</p>
-      <p>{{ skill.testimonial }}</p>
+    <div class="text">
+      <div class="description mb-2" v-html="skill.description"></div>
+      <div class="testimonial">
+        <p>Testimonial:</p>
+        <p>{{ skill.testimonial }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -27,30 +29,32 @@ export default {
 
   .details {
     background-color: color(blueDark);
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 6rem 2fr 1fr;
+    grid-template-columns: 20rem 2fr 1fr;
+    grid-template-rows: 6rem 25rem;
     grid-template-areas:
       '. . lang-links'
-      'logo description .'
-      '. testimonial .';
+      'logo text .';
 
       .logo {
         grid-area: logo;
+        align-items: flex-start;
+        justify-content: center;
+
         img {
-          width: 60%;
+          height: 10rem;
         }
       }
-
       .lang-links {
         grid-area: lang-links;
         justify-content: flex-end;
       }
+      .text {
+        grid-area: text;
+      }
       .description {
-        grid-area: description;
         font-size: 1.2em;
       }
       .testimonial {
-        grid-area: testimonial;
         font-style: italic;
       }
   }

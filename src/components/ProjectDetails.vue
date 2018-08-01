@@ -1,9 +1,9 @@
 <template>
-  <div class="grid details">
-    <div class="logo flex">
+  <div class="grid details p-1">
+    <div class="logo flex flex-center">
       <img :src="`../static/${project.image}`" />
     </div>
-    <h3>{{ project.name }}</h3>
+    <h2>{{ project.name }}</h2>
     <p>{{ project.description }}</p>
     <a :href="project.website"><button class="dark">View More</button></a>
   </div>
@@ -22,15 +22,21 @@ export default {
   .details {
     border-radius: 5px;
     background-color: color(blueLight);
-    grid-template-rows: 20rem 1fr 2fr 1fr;
+    grid-template-rows: 15rem 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    text-align: center;
 
     .logo {
-      align-items: flex-start;
-      justify-content: center;
-
       img {
-        height: 10rem;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        max-height: 10rem;
+        max-width: 80%;
       }
+    }
+
+    button {
+      font-size: 1em;
     }
   }
 </style>

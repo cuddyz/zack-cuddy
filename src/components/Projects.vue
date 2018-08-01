@@ -1,6 +1,9 @@
 <template>
-  <section class="grid">
-    <project-details :project="project" v-for="project in projects" :key="project.name"></project-details>
+  <section>
+    <h3 class="mb-1">PROJECTS</h3>
+    <div class="grid projects">
+      <project-details :project="project" v-for="project in projects" :key="project.name"></project-details>
+    </div>
   </section>
 </template>
 
@@ -24,7 +27,12 @@ export default {
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
 
-  section {
+  h3 {
+    font-size: 1.3em;
+    color: color(blueLight);
+  }
+
+  .projects {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
   }

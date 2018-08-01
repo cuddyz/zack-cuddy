@@ -24,6 +24,7 @@ button {
   border-style: solid;
   margin: 0.5rem;
   padding: 0.75rem;
+  color: color(grey);
   &:hover {
     background-color: color(blueDark);
     border-color: darken(color(blueDark), 20%);
@@ -31,7 +32,16 @@ button {
   }
   i {
     font-size: 2rem;
-    color: color(grey);
+  }
+
+  &.dark {
+    background-color: color(blueDark);
+    border-color: darken(color(blueDark), 10%);
+
+    &:hover {
+      background-color: darken(color(blueDark), 10%);
+      border-color: darken(color(blueDark), 20%);
+    }
   }
 }
 

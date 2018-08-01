@@ -1,34 +1,36 @@
 <template>
-  <div>
+  <div class="grid details">
     <div class="logo flex">
       <img :src="`../static/${project.image}`" />
     </div>
     <h3>{{ project.name }}</h3>
     <p>{{ project.description }}</p>
-    <button><a :href="project.website">View More</a></button>
+    <a :href="project.website"><button class="dark">View More</button></a>
   </div>
 </template>
 
 <script>
-import LinkPreview from '@/components/LinkPreview.vue'
-
 export default {
   name: 'ProjectDetails',
-  props: ['project'],
-  components: {
-    LinkPreview
-  }
+  props: ['project']
 }
 </script>
 
 <style lang="scss" scoped>
-  .logo {
-    grid-area: logo;
-    align-items: flex-start;
-    justify-content: center;
+  @import '../styles/colors.scss';
 
-    img {
-      height: 10rem;
+  .details {
+    border-radius: 5px;
+    background-color: color(blueLight);
+    grid-template-rows: 20rem 1fr 2fr 1fr;
+
+    .logo {
+      align-items: flex-start;
+      justify-content: center;
+
+      img {
+        height: 10rem;
+      }
     }
   }
 </style>

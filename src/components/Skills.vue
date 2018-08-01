@@ -1,5 +1,5 @@
 <template>
-  <section class="grid pl-3 pr-3">
+  <section class="grid">
     <div class="nav">
       <ul class="flex">
         <li @click="currentTab = tabs.VUE" :class="{ 'active': currentTab === tabs.VUE }"><i class="fab fa-vuejs"></i></li>

@@ -1,13 +1,15 @@
 <template>
   <main>
     <profile class="m-3"></profile>
-    <skills></skills>
+    <skills class="pr-3 pl-3"></skills>
+    <projects class="m-3"></projects>
   </main>
 </template>
 
 <script>
 import Profile from '@/components/Profile.vue'
 import Skills from '@/components/Skills.vue'
+import Projects from '@/components/Projects.vue'
 
 export default {
   name: 'Home',
@@ -18,7 +20,8 @@ export default {
   },
   components: {
     Profile,
-    Skills
+    Skills,
+    Projects
   }
 }
 </script>

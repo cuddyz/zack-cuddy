@@ -1,20 +1,21 @@
 <template>
   <div>
-    <link-prevue :url="project.website"></link-prevue>
+    <link-preview :url="project.website"></link-preview>
   </div>
 </template>
 
 <script>
-import LinkPrevue from 'link-prevue'
+import LinkPreview from '@/components/LinkPreview.vue'
 
 export default {
   name: 'ProjectDetails',
   props: ['project'],
   components: {
-    LinkPrevue
+    LinkPreview
   }
 }
 </script>
 
 <style lang="scss" scoped>
+
 </style>

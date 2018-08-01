@@ -1,5 +1,5 @@
 <template>
-  <section class="grid mb-3">
+  <section class="grid">
     <div class="img-container fade-in-top">
       <img src="../assets/me.png" />
     </div>
@@ -28,12 +28,12 @@ export default {
 
   section {
     justify-content: center;
-    grid-template-columns: 3rem 2fr 3fr 3rem;
-    grid-template-rows: 7rem auto;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 3rem auto;
     grid-template-areas:
-      '. . . .'
-      '. profile-picture social .'
-      '. title . .';
+      '. .'
+      'profile-picture social'
+      'title .';
     grid-gap: 2rem;
   }
   .img-container {

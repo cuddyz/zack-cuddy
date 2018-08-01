@@ -1,6 +1,6 @@
 <template>
   <main>
-    <profile></profile>
+    <profile class="m-3"></profile>
     <skills></skills>
   </main>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <section class="grid">
+  <section class="grid pl-3 pr-3">
     <div class="nav">
       <ul class="flex">
         <li class="active"><i class="fab fa-vuejs"></i></li>
@@ -39,11 +39,9 @@ export default {
   section {
     background-color: color(blueLight);
     justify-content: center;
-    grid-template-columns: 3rem 1fr 3rem;
-    grid-template-rows: auto 30rem;
     grid-template-areas:
-      '. nav .'
-      '. content .';
+      'nav'
+      'content';
   }
 
   .nav {
@@ -75,7 +73,7 @@ export default {
     grid-area: content;
     background-color: color(blueDark);
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 6rem 2fr 2fr;
     grid-template-areas:
       '. . lang-links'
       'logo description .'

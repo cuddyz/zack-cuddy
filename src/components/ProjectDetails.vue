@@ -6,7 +6,7 @@
     <h2>{{ project.name }}</h2>
     <p>{{ project.description }}</p>
     <div>
-      <a :href="project.website"><button class="dark">View More</button></a>
+      <a :href="project.website" target="_blank"><button class="dark">View More</button></a>
     </div>
   </div>
 </template>

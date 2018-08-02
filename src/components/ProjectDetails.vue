@@ -1,6 +1,6 @@
 <template>
   <div class="grid details p-1">
-    <div class="logo flex flex-center">
+    <div class="logo flex flex-center p-1">
       <img :src="`../static/${project.image}`" />
     </div>
     <h2>{{ project.name }}</h2>
@@ -20,13 +20,18 @@ export default {
 
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
+  @import '../styles/breaks.scss';
 
   .details {
     border-radius: 5px;
     background-color: color(blueLight);
-    grid-template-rows: 15rem 1fr 1fr 1fr;
+    grid-template-rows: 15rem repeat(3, 1fr);
     grid-gap: 1rem;
     text-align: center;
+
+    @media (max-width: breaks(phablet)) {
+      grid-template-rows: 8rem repeat(3, 1fr);
+    }
 
     .logo {
       img {

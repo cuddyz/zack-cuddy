@@ -26,6 +26,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
+  @import '../styles/breaks.scss';
 
   h3 {
     font-size: 1.3em;
@@ -35,5 +36,13 @@ export default {
   .projects {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
+
+    @media (max-width: breaks(desktop)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: breaks(tablet)) {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

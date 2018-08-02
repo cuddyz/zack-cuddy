@@ -1,7 +1,7 @@
 <template>
   <main>
     <profile class="m-3"></profile>
-    <skills class="pr-3 pl-3"></skills>
+    <skills class="pr-3 pl-3 pb-3"></skills>
     <projects class="m-3"></projects>
     <contact class="pr-3 pl-3 pb-3"></contact>
   </main>

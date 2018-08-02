@@ -8,7 +8,7 @@
     <div class="flex social fade-in-right">
       <button><a href="https://github.com/cuddyz" target="_blank"><i class="fab fa-github"></i></a></button>
       <button><a href="https://www.facebook.com/zack.cuddy" target="_blank"><i class="fab fa-facebook"></i></a></button>
-      <button><a href="https://www.linkedin.com/in/zack-cuddy-56b83984" target="_blank"><i class="fab fa-linkedin"></i></a></button>
+      <button><a href="https://www.linkedin.com/in/zcuddy" target="_blank"><i class="fab fa-linkedin"></i></a></button>
       <button><a href="https://www.upwork.com/o/profiles/users/_~016c63c53cd0427c0e/" target="_blank"><i class="fas fa-briefcase"></i></a></button>
     </div>
     <div class="title fade-in-left">

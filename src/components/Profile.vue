@@ -1,7 +1,9 @@
 <template>
   <section class="grid">
     <div class="img-container fade-in-top">
-      <img src="../assets/me.png" />
+      <div class="img-background">
+        <img src="../assets/me.png" />
+      </div>
     </div>
     <div class="flex social fade-in-right">
       <button><a href="https://github.com/cuddyz" target="_blank"><i class="fab fa-github"></i></a></button>
@@ -25,30 +27,42 @@ export default {
 
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
+  @import '../styles/breaks.scss';
 
   section {
-    justify-content: center;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 3rem auto;
     grid-template-areas:
       '. .'
       'profile-picture social'
       'title .';
     grid-gap: 2rem;
+
+    @media (max-width: breaks(tablet)) {
+      grid-template-rows: auto;
+      grid-template-areas:
+        'profile-picture social'
+        'title social';
+    }
+
   }
   .img-container {
     grid-area: profile-picture;
-    text-align: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: color(blueLight);
-    border: 1px solid color(blueDark);
-    width: 60%;
 
-    img {
+    .img-background {
       border-radius: 50%;
-      height: 100%;
-      width: 100%;
+      background-color: color(blueLight);
+      border: 1px solid color(blueDark);
+      max-width: 25rem;
+      max-height: 25rem;
+
+      img {
+        border-radius: 50%;
+        width: 100%;
+        max-width: 25rem;
+        height: 100%;
+        max-height: 25rem;
+    }
     }
   }
 
@@ -56,6 +70,10 @@ export default {
     grid-area: social;
     justify-content: center;
     align-items: flex-end;
+
+    @media (max-width: breaks(tablet)) {
+      flex-direction: column;
+    }
   }
 
   .title {
@@ -64,14 +82,31 @@ export default {
 
     h1 {
       font-size: 2.3em;
+
+      @media (max-width: breaks(phablet)) {
+        font-size: 2em;
+      }
     }
 
     h3 {
       font-size: 1.3em;
+
+      @media (max-width: breaks(phablet)) {
+        font-size: 1em;
+      }
     }
 
     hr {
       border-color: color(blueLight);
+      width: 50vw;
+    }
+  }
+
+  button {
+    i {
+      @media (max-width: breaks(phablet)) {
+        font-size: 1rem;
+      }
     }
   }
 </style>

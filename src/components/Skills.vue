@@ -37,6 +37,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
+  @import '../styles/breaks.scss';
 
   section {
     background-color: color(blueLight);
@@ -67,6 +68,14 @@ export default {
       i {
         font-size: 4rem;
         color: color(grey);
+
+        @media (max-width: breaks(phablet)) {
+          font-size: 2rem;
+        }
+
+        @media (max-width: breaks(phone)) {
+          font-size: 1.8rem;
+        }
       }
     }
   }

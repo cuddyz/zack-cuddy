@@ -1,6 +1,6 @@
 <template>
   <div class="grid details pb-3">
-    <div class="flex lang-links mt-1 mr-1">
+    <div class="lang-links mt-1 mr-1">
       <button><a :href="skill.github" target="_blank"><i class="fab fa-github"></i></a></button>
       <button><a :href="skill.website" target="_blank"><i class="fas fa-link"></i></a></button>
     </div>
@@ -50,7 +50,7 @@ export default {
     }
 
     @media (max-width: breaks(tablet)) {
-      height: 40rem;
+      height: 45rem;
       grid-template-columns: 1fr 6rem;
       grid-template-rows: 6rem 5rem 2fr 2fr;
       grid-template-areas:
@@ -58,6 +58,10 @@ export default {
         'logo .'
         'description description'
         'testimonial testimonial';
+    }
+
+    @media (max-width: breaks(phone)) {
+      height: 50rem;
     }
 
     .logo {
@@ -80,6 +84,17 @@ export default {
     .lang-links {
       grid-area: lang-links;
       justify-content: flex-end;
+      display: flex;
+
+      @media (max-width: breaks(phablet)) {
+        display: block;
+      }
+
+      i {
+        @media (max-width: breaks(phablet)) {
+          font-size: 1rem;
+        }
+      }
     }
     .description {
       grid-area: description;
@@ -93,7 +108,7 @@ export default {
         padding: 1rem 3rem;
       }
 
-      @media (max-width: breaks(phone)) {
+      @media (max-width: breaks(phablet)) {
         font-size: 1em;
       }
     }
@@ -110,7 +125,7 @@ export default {
         padding: 1rem 3rem;
       }
 
-      @media (max-width: breaks(phone)) {
+      @media (max-width: breaks(phablet)) {
         font-size: 0.8em;
       }
     }

@@ -59,6 +59,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../styles/colors.scss';
+  @import '../styles/breaks.scss';
 
   section {
     background-color: color(blueLight);
@@ -73,6 +74,10 @@ export default {
       text-align: center;
       width: 50%;
       grid-gap: 1rem;
+
+      @media (max-width: breaks(tablet)) {
+        width: 80%;
+      }
     }
 
     input,

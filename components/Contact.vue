@@ -38,7 +38,7 @@ export default {
         return
       }
 
-      var form = $("#contactForm")
+      var form = $("#contactForm")[0]
       console.log(form.serialize())
       http.post(form.attr("action"), form.serialize()).then(function() {
         alert("Thank you!");

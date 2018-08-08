@@ -16,8 +16,6 @@
 </template>
 
 <script>
-import http from 'axios'
-
 export default {
   name: 'Contact',
   data () {

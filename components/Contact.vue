@@ -39,8 +39,10 @@ export default {
         return
       }
 
-      console.log(document.getElementById('contactForm'))
-      document.getElementById('contactForm').submit()
+      var form = $('#contactForm')
+      http.post('/', form.serialize()).then(function() {
+        alert("Thank you!");
+      });
     },
     validForm: function() {
       if (!this.contact.name || !this.contact.email || !this.contact.details) {

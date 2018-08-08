@@ -2,7 +2,7 @@
   <section class="grid">
     <h3 class="pt-1 pb-1">Need help with a project?</h3>
     <form id="contactForm" name="contactForm" method="POST" action="/" class="grid" netlify>
-      <input name="form-name" value="contactForm" hidden />
+      <input name="form-name" value="contactForm" class="hidden" />
       <input name="name" :class="{'error': errors.fields && !contact.name }" v-model="contact.name" type="text" placeholder="Full Name" />
       <input name="email" :class="{'error': (errors.fields && !contact.email) || errors.email }" v-model="contact.email" type="email" placeholder="Email" />
       <textarea name="details" :class="{'error': errors.fields && !contact.details }" v-model="contact.details" placeholder="Details" />
@@ -38,8 +38,8 @@ export default {
         return
       }
 
-      var form = $("#contactForm")[0]
-      console.log(form.serialize())
+      var form = $("#contactForm")
+      console.log(form)
       http.post(form.attr("action"), form.serialize()).then(function() {
         alert("Thank you!");
       });
@@ -94,6 +94,10 @@ export default {
 
       &.error {
         border-color: color(error);
+      }
+
+      &.hidden {
+        display: none;
       }
     }
 

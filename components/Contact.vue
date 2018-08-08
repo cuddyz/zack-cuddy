@@ -1,7 +1,8 @@
 <template>
   <section class="grid">
     <h3 class="pt-1 pb-1">Need help with a project?</h3>
-    <form id="contactForm" name="contactForm" method="POST" class="grid" action="" netlify>
+    <form id="contactForm" name="contactForm" method="POST" action="/" class="grid" netlify>
+      <input name="form-name" value="contactForm" hidden />
       <input name="name" :class="{'error': errors.fields && !contact.name }" v-model="contact.name" type="text" placeholder="Full Name" />
       <input name="email" :class="{'error': (errors.fields && !contact.email) || errors.email }" v-model="contact.email" type="email" placeholder="Email" />
       <textarea name="details" :class="{'error': errors.fields && !contact.details }" v-model="contact.details" placeholder="Details" />
@@ -14,6 +15,8 @@
 </template>
 
 <script>
+import http from 'axios'
+
 export default {
   name: 'Contact',
   data () {
@@ -34,7 +37,12 @@ export default {
       if (!this.validForm()) {
         return
       }
-      document.getElementById('contactForm').submit()
+
+      var form = $("#contactForm")
+      console.log(form.serialize())
+      http.post(form.attr("action"), form.serialize()).then(function() {
+        alert("Thank you!");
+      });
     },
     validForm: function() {
       if (!this.contact.name || !this.contact.email || !this.contact.details) {

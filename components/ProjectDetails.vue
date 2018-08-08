@@ -1,7 +1,7 @@
 <template>
   <div class="grid details p-1">
     <div class="logo flex flex-center p-1">
-      <img :src="`../static/${project.image}`" />
+      <img :src="`images/${project.image}`" />
     </div>
     <h2>{{ project.name }}</h2>
     <p>{{ project.description }}</p>
@@ -19,8 +19,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../styles/colors.scss';
-  @import '../styles/breaks.scss';
+  @import '../assets/styles/colors.scss';
+  @import '../assets/styles/breaks.scss';
 
   .details {
     border-radius: 5px;

@@ -16,7 +16,7 @@
 
 <script>
 import SkillDetails from '@/components/SkillDetails.vue'
-import { Languages } from '@/constants/Languages.js'
+import { Languages } from '@/assets/Languages.js'
 
 export default {
   name: 'Skills',
@@ -36,8 +36,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../styles/colors.scss';
-  @import '../styles/breaks.scss';
+  @import '../assets/styles/colors.scss';
+  @import '../assets/styles/breaks.scss';
 
   section {
     background-color: color(blueLight);

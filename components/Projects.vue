@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { Projects } from '@/constants/Projects.js'
+import { Projects } from '@/assets/Projects.js'
 import ProjectDetails from '@/components/ProjectDetails.vue'
 
 export default {
@@ -25,8 +25,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../styles/colors.scss';
-  @import '../styles/breaks.scss';
+  @import '../assets/styles/colors.scss';
+  @import '../assets/styles/breaks.scss';
 
   h3 {
     font-size: 1.3em;

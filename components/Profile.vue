@@ -2,7 +2,7 @@
   <section class="grid">
     <div class="img-container fade-in-top">
       <div class="img-background">
-        <img src="../assets/me.png" />
+        <img src="images/me.png" />
       </div>
     </div>
     <div class="flex social fade-in-right">
@@ -26,8 +26,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../styles/colors.scss';
-  @import '../styles/breaks.scss';
+  @import '../assets/styles/colors.scss';
+  @import '../assets/styles/breaks.scss';
 
   section {
     grid-template-columns: repeat(2, 1fr);

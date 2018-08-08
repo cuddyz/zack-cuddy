@@ -5,7 +5,7 @@
       <button><a :href="skill.website" target="_blank"><i class="fas fa-link"></i></a></button>
     </div>
     <div class="logo flex">
-      <img :src="`../static/${skill.image}`" />
+      <img :src="`images/${skill.image}`" />
     </div>
     <div class="description mb-2" v-html="skill.description"></div>
     <div class="testimonial">
@@ -23,8 +23,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../styles/colors.scss';
-  @import '../styles/breaks.scss';
+  @import '../assets/styles/colors.scss';
+  @import '../assets/styles/breaks.scss';
 
   .details {
     height: 30rem;

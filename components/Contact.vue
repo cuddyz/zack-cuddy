@@ -1,10 +1,12 @@
 <template>
   <section class="grid">
     <h3 class="pt-1 pb-1">Need help with a project?</h3>
-    <form id="contactForm" method="POST" class="grid" action="/" netlify>
+    <form id="contactForm" name="contactForm" method="POST" action="/" class="grid" netlify>
+      <input name="form-name" value="contactForm" type="hidden" />
       <input name="name" :class="{'error': errors.fields && !contact.name }" v-model="contact.name" type="text" placeholder="Full Name" />
       <input name="email" :class="{'error': (errors.fields && !contact.email) || errors.email }" v-model="contact.email" type="email" placeholder="Email" />
       <textarea name="details" :class="{'error': errors.fields && !contact.details }" v-model="contact.details" placeholder="Details" />
+      <button class="hidden" type="submit">Send</button>
     </form>
     <button @click="submit" class="dark">Submit</button>
     <h4 class="error" v-if="errors.fields">Make sure all the fields are filled out.</h4>
@@ -34,6 +36,7 @@ export default {
       if (!this.validForm()) {
         return
       }
+
       document.getElementById('contactForm').submit()
     },
     validForm: function() {
@@ -95,5 +98,8 @@ export default {
         color: color(error);
       }
     }
+  }
+  .hidden {
+    display: none;
   }
 </style>

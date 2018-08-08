@@ -40,11 +40,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    plugins: [
-      new webpack.ProvidePlugin({
-        '$': 'jquery'
-      })
-    ],
     /*
     ** Run ESLint on save
     */

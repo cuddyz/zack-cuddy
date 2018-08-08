@@ -1,7 +1,7 @@
 <template>
   <section class="grid">
     <h3 class="pt-1 pb-1">Need help with a project?</h3>
-    <form id="contactForm" name="contactForm" method="POST" class="grid" netlify>
+    <form id="contactForm" name="contactForm" method="POST" action="/" class="grid" netlify>
       <input name="form-name" value="contactForm" type="hidden" />
       <input name="name" :class="{'error': errors.fields && !contact.name }" v-model="contact.name" type="text" placeholder="Full Name" />
       <input name="email" :class="{'error': (errors.fields && !contact.email) || errors.email }" v-model="contact.email" type="email" placeholder="Email" />
@@ -39,10 +39,7 @@ export default {
         return
       }
 
-      var form = $('#contactForm')
-      http.post('/', form.serialize()).then(function() {
-        alert("Thank you!");
-      });
+      document.getElementById('contactForm').submit()
     },
     validForm: function() {
       if (!this.contact.name || !this.contact.email || !this.contact.details) {

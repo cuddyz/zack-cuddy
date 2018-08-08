@@ -1,6 +1,6 @@
-# nuxt-app
+# zack-cuddy.com
 
-> Nuxt.js project
+> Zack Cuddy - Developer.  Bringing VueJS Apps to a site near you!
 
 ## Build Setup
 

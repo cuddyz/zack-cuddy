@@ -39,8 +39,7 @@ export default {
       }
 
       var form = $("#contactForm")
-      console.log(form)
-      http.post(form.attr("action"), form.serialize()).then(function() {
+      $.post(form.attr("action"), form.serialize()).then(function() {
         alert("Thank you!");
       });
     },

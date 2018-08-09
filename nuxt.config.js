@@ -29,7 +29,8 @@ module.exports = {
     { src: '@/assets/styles/app.scss', lang: 'scss' }
   ],
   plugins: [
-    '@/plugins/VueAnalytics.js'
+    '@/plugins/VueAnalytics.js',
+    '@/plugins/VueMaterial.js'
   ],
   /*
   ** Build configuration

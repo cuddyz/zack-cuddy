@@ -1,9 +1,15 @@
+// Plugins
+@import 'vue-material/dist/vue-material.min.css';
+
+// Main
 @import 'reset';
 @import 'colors';
 @import 'common';
 @import 'breaks';
 
+// Skeleton
 @import 'framing';
 @import 'spacing';
 
+// Functionality
 @import 'animations';

@@ -29,14 +29,18 @@ module.exports = {
     { src: '@/assets/styles/app.scss', lang: 'scss' }
   ],
   plugins: [
-    '@/plugins/VueAnalytics.js',
     '@/plugins/VueMaterial.js'
+  ],
+  modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-123361165-1'
+    }]
   ],
   /*
   ** Build configuration
   */
   build: {
-    vendor: ['vue-analytics', 'vue-material'],
+    vendor: ['@nuxtjs/google-analytics', 'vue-material'],
     /*
     ** Run ESLint on save
     */

@@ -22,7 +22,7 @@
         </div>
       </md-card-content>
 
-      <md-card-actions>
+      <md-card-actions class="pb-1">
         <md-button class="md-primary">Add to cart</md-button>
       </md-card-actions>
     </md-card>

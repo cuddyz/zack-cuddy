@@ -25,8 +25,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/colors.scss';
-  @import '../../assets/styles/breaks.scss';
+  @import './assets/styles/colors.scss';
+  @import './assets/styles/breaks.scss';
 
   h3 {
     font-size: 1.3em;

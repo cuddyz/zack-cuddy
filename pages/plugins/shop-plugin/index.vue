@@ -86,8 +86,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/breaks.scss';
-  @import '../../assets/styles/colors.scss';
+  @import './assets/styles/breaks.scss';
+  @import './assets/styles/colors.scss';
 
   .grid {
     width: 100%;

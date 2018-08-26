@@ -26,8 +26,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/styles/colors.scss';
-  @import '../assets/styles/breaks.scss';
+  @import '../../assets/styles/colors.scss';
+  @import '../../assets/styles/breaks.scss';
 
   section {
     grid-template-columns: repeat(2, 1fr);

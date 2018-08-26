@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import Profile from '@/components/Profile.vue'
-import Skills from '@/components/Skills.vue'
-import Projects from '@/components/Projects.vue'
-import Contact from '@/components/Contact.vue'
+import Profile from '@/components/main/Profile.vue'
+import Skills from '@/components/main/Skills.vue'
+import Projects from '@/components/main/Projects.vue'
+import Contact from '@/components/main/Contact.vue'
 
 export default {
   name: 'Home',

@@ -9,7 +9,7 @@
 
 <script>
 import { Projects } from '@/assets/Projects.js'
-import ProjectDetails from '@/components/ProjectDetails.vue'
+import ProjectDetails from '@/components/main/ProjectDetails.vue'
 
 export default {
   name: 'Projects',
@@ -25,8 +25,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/styles/colors.scss';
-  @import '../assets/styles/breaks.scss';
+  @import '../../assets/styles/colors.scss';
+  @import '../../assets/styles/breaks.scss';
 
   h3 {
     font-size: 1.3em;

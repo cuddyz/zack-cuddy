@@ -19,8 +19,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/styles/colors.scss';
-  @import '../assets/styles/breaks.scss';
+  @import '../../assets/styles/colors.scss';
+  @import '../../assets/styles/breaks.scss';
 
   .details {
     border-radius: 5px;

@@ -1,5 +1,5 @@
 <template>
-  <section class="container flex flex-center">
+  <article class="container flex flex-center">
     <div class="checkout-form md-elevation-15 text-center column p-3">
       <h3 class="p-1">ORDER TOTAL</h3>
       <h1 class="p-1">$35.00</h1>
@@ -7,7 +7,7 @@
       <div class="p-1" id="paypal-button"></div>
       <p>This form is a demo and no charges will be sent to your account.</p>
     </div>
-  </section>
+  </article>
 </template>
 
 <script>

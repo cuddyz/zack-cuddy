@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main>
     <shop-plugin :items="items"></shop-plugin>
-  </div>
+  </main>
 </template>
 
 <script>

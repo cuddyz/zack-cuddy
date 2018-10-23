@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main>
     <input-form-plugin></input-form-plugin>
-  </div>
+  </main>
 </template>
 
 <script>

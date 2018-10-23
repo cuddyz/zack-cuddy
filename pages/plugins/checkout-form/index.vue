@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main>
     <checkout-form-plugin></checkout-form-plugin>
-  </div>
+  </main>
 </template>
 
 <script>

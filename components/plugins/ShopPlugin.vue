@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <article>
     <md-tabs md-active-tab="null" md-alignment="right">
       <md-tab id="tab-cart" md-icon="shopping_cart"></md-tab>
     </md-tabs>
@@ -34,7 +34,7 @@
         </md-card-actions>
       </md-card>
     </div>
-  </main>
+  </article>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <main class="md-layout flex-center">
+  <article class="md-layout flex-center">
     <md-card class="md-layout-item md-size-50 md-small-size-100">
       <md-card-header>
         <div class="md-title">Create Account</div>
@@ -66,7 +66,7 @@
     </md-card>
 
     <md-snackbar v-if="userSaved" :style="{ 'background-color': lastUser.color.hex, 'color': lastUser.color.font }" :md-active.sync="userSaved">The user {{ lastUser.firstName }} {{ lastUser.lastName }} ({{ lastUser.username }}) was saved with success!</md-snackbar>
-  </main>
+  </article>
 </template>
 
 <script>
@@ -163,7 +163,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  main {
+  article {
     height: 100vh;
   }
   .md-progress-bar {

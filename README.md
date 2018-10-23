@@ -9,7 +9,7 @@ Input form plugin (`/plugins/input-form`)
 <br />
 Checkout form plugin (`/plugins/checkout-form`)
 <br />
-Shop plugin (`plugins/shop`)
+Shop plugin (`/plugins/shop`)
 
 ## Build Setup
 

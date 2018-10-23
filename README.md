@@ -5,11 +5,11 @@
 This is my web resume as well as a personal playground to try some new things in Nuxt.
 Currently there are some hidden routes that will be tied together into demos here soon.
 
-Input form plugin (`/plugins/input-form`)
+Input form plugin (`/input-form-plugin`)
 <br />
-Checkout form plugin (`/plugins/checkout-form`)
+Checkout form plugin (`/checkout-form-plugin`)
 <br />
-Shop plugin (`/plugins/shop`)
+Shop plugin (`/shop-plugin`)
 
 ## Build Setup
 

@@ -8,7 +8,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0' },
       { hid: 'description', name: 'description', content: 'Zack Cuddy - Developer.  Bringing VueJS Apps to a site near you!' },
-      { hid: 'og:image', name: 'og:image', content: `https://zack-cuddy.com/images/me.png`},
+      { hid: 'og:image', name: 'og:image', content: 'https://zack-cuddy.com/images/me.png'},
       { hid: 'og:title', name: 'og:title', content: 'Zack Cuddy'},
       { hid: 'og:url', name: 'og:url', content: 'https://zack-cuddy.com'},
       { hid: 'og:site_name', name: 'og:site_name', content: 'Zack Cuddy'},

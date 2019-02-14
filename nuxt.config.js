@@ -43,7 +43,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['@nuxtjs/google-analytics', 'vue-material'],
+    vendor: ['vue-material'],
     /*
     ** Run ESLint on save
     */

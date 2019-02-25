@@ -1,5 +1,7 @@
 # zack-cuddy.com
 
+Depricated in favor of (https://github.com/cuddyz/Zack-Cuddy-V2)
+
 > Zack Cuddy - Developer.  Bringing VueJS Apps to a site near you!
 
 This is my web resume as well as a personal playground to try some new things in Nuxt.
